@@ -30,21 +30,94 @@
     <img src="Imagens/Logo.jpg" alt="Logo não Encontrado"/>
   </section>
 
-  <form>
-  <div class="Title">
-    <h1>Inscreva-se</h1>
-  </div>
-  
-  <form>
-    Evento
-    <select name="Evento" id="nomeevento" required>
-    <option value="">-- Selecione --</option>
-    <option value="VA">Voe sem Asas </option>
-    <option value="FJ">Festa Junina </option>
-    <option value="ST">Semana da tecnologia </option>
-  </form>
-  </form>
+  <main>
 
+    <h1>Inscreva-se</h1>
+    <form method="POST">
+      
+      <fieldset>
+
+        <label for="evento">Evento</label>
+        <select name="Assunto" id="contato-assunto" required >
+          <option value=""> -- Selecione -- </option>
+          <option value="VA">Voe sem asas</option>
+          <option value="FJ">Festa junina </option>
+          <option value="">Semana de tecnologia</option>
+        </select>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Informações de Acesso</legend>
+        <p>
+          <label for="Usuário">Usuário </label>
+          <input type="text" name="usuário" id="usuário" required/><br>
+        </p>
+        <p>
+          <label for="Senha">Senha </label>
+          <input type="password" name="password" id="password" required/><br>
+        </p>
+        <p>
+          <label for="ConfirmarSenha">Confirme Senha </label>
+          <input type="confpassword" name="confpassword" id="confpassword" required/><br>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Informações Pessoais</legend>
+        <p>
+          <label for="Nome Completo">Usuário </label>
+          <input type="text" name="nomecompleto" id="nomecompleto" required/><br>
+        </p>
+        <p>
+          <label for="Email">Email </label>
+          <input type="email" name="email" id="email" required/><br>
+        </p>
+        <p>
+          <label for="Celular">Celular </label>
+          <input type="tel" name="telefone" id="telefone" required/><br>
+        </p>
+
+        <fieldset>
+          <legend>Sexo</legend>
+          <input type="radio" value="Masculino" name="Masculino" required>Masculino
+          <input type="radio" value="Masculino" name="Masculino" required>Feminino
+        </fieldset>
+
+        <p>
+        <label>Data de Nascimento</label>
+        <input type="date" value="data" name="data" required>
+        </p>
+      
+        <p>
+        <label>Cor Favorita</label>
+        <input type="color" value="corfavorita" name="corfavorita" required>
+        </p>
+
+        <p>
+        <label>Perfil do GitHub</label>
+        <input type="url" name="GitHub" required>
+        </p>
+
+        </fieldset>
+
+      </fieldset>
+
+      </main>
+
+    </form>
+
+
+    <section class="Icons">
+    <footer>
+      <br>
+      <br>
+      <br>
+      <a href="https://www.facebook.com/ifsppirituba"><img width="40" src="Imagens/facebook.png" alt="Imagem não encontrada"/img></a>
+      <br/>
+      <p>IFSP - Câmpus Pirituba - Av. Mutinga, 951 - Jardim Santo Elias - CEP: 05110-000 - São Paulo/SP - Contato: (011) 2504-0100 </p>
+    </footer>
+  </section>
 
   <script src="script.js"></script>
 </body>
